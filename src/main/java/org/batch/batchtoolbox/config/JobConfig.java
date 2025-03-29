@@ -29,7 +29,7 @@ public class JobConfig {
 
     public JobConfig(
             JobRepository jobRepository,
-            PlatformTransactionManager transactionManager, // Parameter name matches bean name
+            PlatformTransactionManager transactionManager,
             BeneficiaryItemReader beneficiaryItemReader,
             BeneficiaryItemProcessor beneficiaryItemProcessor,
             BeneficiaryItemWriter beneficiaryItemWriter) {

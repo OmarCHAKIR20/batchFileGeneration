@@ -9,8 +9,6 @@ public class BeneficiaryItemProcessor implements ItemProcessor<Beneficiary, Bene
 
     @Override
     public Beneficiary process(Beneficiary beneficiary) {
-        // You can transform or filter data here if needed
-        // This example just passes the beneficiary through
         return beneficiary;
     }
 }

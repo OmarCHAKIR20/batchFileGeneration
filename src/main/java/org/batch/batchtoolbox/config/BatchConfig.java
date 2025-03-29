@@ -20,16 +20,8 @@ public class BatchConfig {
     @Primary
     public PlatformTransactionManager transactionManager(DataSource dataSource) {
         DataSourceTransactionManager transactionManager = new DataSourceTransactionManager(dataSource);
-        // Set explicit isolation level for Oracle SYS user
         transactionManager.setDefaultTimeout(30);
         return transactionManager;
     }
 
-
-    @Bean(name = "batchTransactionManager")
-    public PlatformTransactionManager batchTransactionManager(DataSource dataSource) {
-        DataSourceTransactionManager transactionManager = new DataSourceTransactionManager(dataSource);
-        transactionManager.setDefaultTimeout(30);
-        return transactionManager;
-    }
 }
